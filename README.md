@@ -6,7 +6,7 @@ Sensor fusion pipeline on the [KITTI Raw dataset](http://www.cvlibs.net/datasets
 
 ## Tasks
 
-### Task 1 — LiDAR to Camera Projection
+### Task 1: LiDAR to Camera Projection
 
 Projects Velodyne LiDAR point clouds onto the rectified camera image plane from first principles.
 
@@ -19,7 +19,7 @@ Projects Velodyne LiDAR point clouds onto the rectified camera image plane from 
 |---|---|
 | ![cam2 overlay](output/cam2_overlay_000000.png) | ![cam3 overlay](output/cam3_overlay_000000.png) |
 
-### Task 2 — Rerun 3D Visualization
+### Task 2: Rerun 3D Visualization
 
 Builds an interactive multi-panel Rerun visualization layout logged over 100 frames.
 
@@ -34,7 +34,7 @@ Builds an interactive multi-panel Rerun visualization layout logged over 100 fra
 
 ![Rerun Screenshot](rerun_screenshot.png)
 
-### Task 3 — Target-Free LiDAR-Camera Calibration (ICP)
+### Task 3: Target-Free LiDAR-Camera Calibration (ICP)
 
 Calibrates the LiDAR-to-camera extrinsic transform without a calibration target, by aligning the Velodyne point cloud to a stereo-inferred 3D point cloud.
 
@@ -57,11 +57,11 @@ Calibrates the LiDAR-to-camera extrinsic transform without a calibration target,
 |---|---|---|
 | ![init](output/online_calib_overlay_init.png) | ![est](output/online_calib_overlay_est.png) | ![gt](output/online_calib_overlay_gt.png) |
 
-### Extra Credit — Stereo Camera Calibration from Checkerboard
+### Task 4: Stereo Camera Calibration from Checkerboard
 
 Performs intrinsic stereo camera calibration from a pair of images containing multiple checkerboard patterns.
 
-- Multi-scale tile-based detection (300–600 px tiles, 40% overlap) to find checkerboards at varying scales
+- Multi-scale tile-based detection (300-600 px tiles, 40% overlap) to find checkerboards at varying scales
 - Refines corners to sub-pixel accuracy
 - Calibrates left and right cameras individually, then performs stereo calibration
 - Computes stereo rectification maps and generates a disparity map using OpenCV SGBM
