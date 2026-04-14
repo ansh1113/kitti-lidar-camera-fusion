@@ -94,7 +94,7 @@ pip install -r requirements.txt
 
 ## Data
 
-Download the KITTI raw data zip from the course Box link (requires UIUC login) and unzip to match this structure:
+Download the KITTI raw data zip and unzip to match this structure:
 
 ```
 data/
